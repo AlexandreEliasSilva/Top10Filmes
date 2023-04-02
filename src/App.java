@@ -21,7 +21,7 @@ public class App {
         HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
         String body = response.body();
 
-        
+
         // extrair só os dados que interessam (titulo, poster, classificação)
         
         var parser = new JsonParser();
